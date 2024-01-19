@@ -1,0 +1,156 @@
+:root {
+    --primary-color: #b0daff;
+    --secondary-color: #0f1420;
+    --tertiary-color: #0a0e16;
+    --text-color: #e0f4fc;
+    --link-color: #60d2ff;
+    --visited-link-color: #eac7ff;
+}
+
+@media (max-width: 1056px) {
+    nav ul li a, nav ul li{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 997px) {
+    nav ul li a, nav ul li{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 892px) {
+    nav ul li a, nav ul li{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 807px) {
+    nav ul li a, nav ul li{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 748px) {
+    nav ul li a, nav ul li{
+        font-size: 12px;
+    }
+}
+
+@font-face {
+    font-family: Merriweather;
+    src: url(fonts/merriweather/Merriweather-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/montserrat/Montserrat-Medium.ttf);
+}
+
+.light-mode {
+    --primary-color: #002c53;
+    --secondary-color: #ebebeb;
+    --tertiary-color: #dadada;
+    --text-color: #111516;
+    --link-color: #056a96;
+    --visited-link-color: #1e032e;
+}
+
+.sans-serif {
+    font-family: Montserrat;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--primary-color);
+    overflow-x: hidden;
+    background-color: var(--secondary-color);
+    font-family: Merriweather;
+    line-height: 20px;
+}
+
+a {
+    color: var(--link-color)
+}
+
+a:hover {
+    color: var(--primary-color);
+    font-style: oblique;
+    text-decoration: underline;
+}
+
+a:visited {
+    font-style: italic;
+    color: var(--visited-link-color);
+}
+
+.defunct:hover {
+    color: var(--text-color);
+    font-style: normal;
+    text-decoration: line-through;
+    cursor: not-allowed;
+}
+
+nav a {
+    font-size: 17px;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: -2%;
+    padding: 0;
+    width: 18%;
+    background-color: var(--tertiary-color);
+    position: fixed;
+    height: 102%;
+    border-right: solid var(--text-color) 2px;
+}
+
+nav ul li {
+    color: var(--text-color);
+    display: block;
+    padding-left: 7%;
+    padding-right:7%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-decoration: none;
+}
+
+nav ul li .toggler {
+    cursor: pointer;
+}
+
+nav ul li .sep {
+    text-align: center;
+    font-style: italic;
+    margin: 5px;
+}
+
+article {
+    margin-left: 20%;
+    color: var(--text-color);
+}
+
+hr {
+    border: solid var(--text-color) 1px;
+}
+
+table {
+    border-collapse: collapse;
+    padding: 7px;
+}
+
+td, th {
+    border: 2px solid #c9c9c9;
+    background-color: var(--tertiary-color);
+    text-align: center;
+    padding: 10px;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--tertiary-color);
+}
